@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+
+body {
+  font-family: theme('fontFamily.body');
+  background-color: theme('colors.alabaster');
+  color: theme('colors.dark-lava');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: theme('fontFamily.heading');
+}
