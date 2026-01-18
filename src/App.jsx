@@ -21,18 +21,17 @@ export default function App() {
     <Router>
       <ScrollToTop />
       {/* Everything inside Router */}
-      <div className="flex flex-col min-h-screen bg-alabaster">
+      <div className="flex flex-col min-h-screen">
         <Navbar /> {/* fixed navbar */}
 
-        <main className="flex-1 pt-16 w-full">
+        <div className="flex-1 pt-16">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Home />} />
           </Routes>
-        </main>
+        </div>
 
         <Footer />
       </div>
@@ -42,10 +41,10 @@ export default function App() {
         href="https://wa.me/971504733247"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-4 right-4 z-[1000] bg-green-500 text-white p-3 md:p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+        className="fixed bottom-4 right-4 z-[1000] bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
         aria-label="WhatsApp"
       >
-        <FaWhatsapp size={25} className="md:w-9 md:h-9" />
+        <FaWhatsapp size={35} />
       </a>
     </Router>
   );
