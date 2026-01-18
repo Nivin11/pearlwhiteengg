@@ -20,27 +20,27 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-20 bg-parchment text-dark-lava">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-4xl font-extrabold mb-4">Why Choose Us?</h2>
-          <p className="text-lg text-beaver max-w-2xl mx-auto">
+    <section className="py-12 sm:py-20 bg-parchment text-dark-lava">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12" data-aos="fade-up">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Why Choose Us?</h2>
+          <p className="text-base sm:text-lg text-beaver max-w-2xl mx-auto px-2">
             Experience the Pearl White Fabrication difference.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-center">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-alabaster p-8 rounded-lg shadow-lg"
+              className="bg-alabaster p-6 sm:p-8 rounded-lg shadow-lg"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               <div className="flex justify-center items-center mb-4">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-2">{feature.title}</h3>
-              <p className="text-beaver">{feature.description}</p>
+              <h3 className="text-xl sm:text-2xl font-bold mb-2">{feature.title}</h3>
+              <p className="text-sm sm:text-base text-beaver">{feature.description}</p>
             </div>
           ))}
         </div>

@@ -12,10 +12,10 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="py-20 bg-alabaster text-dark-lava" data-aos="fade-up">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold mb-4">Our Experience</h2>
+    <section className="py-12 sm:py-20 bg-alabaster text-dark-lava" data-aos="fade-up">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Our Experience</h2>
           
         </div>
         <div className="max-w-4xl mx-auto">
@@ -23,7 +23,7 @@ const Stats = () => {
             <div key={index} className="mb-8">
               <div className="flex items-center mb-2">
                 {stat.icon}
-                <h3 className="text-xl font-bold ml-4">{stat.label}</h3>
+                <h3 className="text-lg sm:text-xl font-bold ml-4">{stat.label}</h3>
               </div>
               <ProgressBar
                 value={stat.value}
