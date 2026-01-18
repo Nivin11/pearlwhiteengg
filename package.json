@@ -1,10 +1,10 @@
 {
-  "name": "demo-app",
+  "name": "pearlwhite-engineering-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

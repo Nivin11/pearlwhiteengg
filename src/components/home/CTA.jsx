@@ -1,4 +1,5 @@
 import { FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import heroBg from '../../assets/hero-bg.jpg';
 
 const CTA = () => {
@@ -15,13 +16,13 @@ const CTA = () => {
         <p className="text-lg max-w-2xl mx-auto mb-8">
           Let's discuss your project and how we can help you achieve your goals.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="inline-flex items-center justify-center px-8 py-4 font-bold text-lg bg-saddle-brown text-alabaster rounded-lg shadow-lg hover:bg-saddle-brown/90 transform hover:scale-105 transition-transform duration-300"
         >
           Contact Us
           <FiArrowRight className="ml-2" />
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import heroBg from '../../assets/hero-bg.jpg';
 
 const Hero = () => {
@@ -23,13 +24,13 @@ const Hero = () => {
         <p className="text-lg md:text-xl lg:text-2xl mb-8">
           From concept to creation, we deliver cutting-edge solutions in welding, cutting, and CNC machining.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="inline-flex items-center justify-center px-8 py-4 font-bold text-lg bg-saddle-brown text-alabaster rounded-lg shadow-lg hover:bg-saddle-brown/90 transform hover:scale-105 transition-transform duration-300"
         >
           Get a Free Quote
           <FiArrowRight className="ml-2" />
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -165,10 +165,10 @@ export default function About() {
             Get in touch with our team to discuss your next project.
           </p>
 
-          <a href="/contact" className="mt-8 inline-flex items-center justify-center px-8 py-4 font-bold text-lg bg-saddle-brown text-alabaster rounded-lg shadow-lg hover:bg-saddle-brown/90 transform hover:scale-105 transition-transform duration-300">
+          <Link to="/contact" className="mt-8 inline-flex items-center justify-center px-8 py-4 font-bold text-lg bg-saddle-brown text-alabaster rounded-lg shadow-lg hover:bg-saddle-brown/90 transform hover:scale-105 transition-transform duration-300">
             Contact Us
             <FiArrowRight className="ml-2" />
-          </a>
+          </Link>
         </div>
       </section>
     </div>
